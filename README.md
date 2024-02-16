@@ -1,3 +1,6 @@
+You can test how it works here:
+  http://188.127.251.190:3002
+
 To install:
   backend
     yarn install
