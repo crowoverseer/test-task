@@ -18,7 +18,7 @@ import type {
 
 const apiParams = {
   name: "gateway",
-  url: "http://localhost:3001/gateway",
+  url: "http://188.127.251.190:3001/gateway",
 };
 
 const useGet = () => useCreateGetTransport<IGetDeviceResponse>(apiParams);
