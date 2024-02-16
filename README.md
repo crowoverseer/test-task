@@ -1,5 +1,5 @@
 The TASK:
-  The user should be able to create a gateway. By clicking on it it should be able to create a device.
+  The user should be able to create a gateway. By clicking on it, he should be able to create a device.
   There should me max 10 devices for a gateway.
   Multi-user experience is not nessessary.
   Validation should be implemented.
