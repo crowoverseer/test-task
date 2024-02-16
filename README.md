@@ -1,3 +1,7 @@
+The TASK:
+  The user should be able to create a gateway. By clicking on it it should be able to create a device.
+  There should me max 10 devices for a gateway.
+
 You can test how it works here:
   http://188.127.251.190:3002
 
