@@ -4,7 +4,7 @@ The TASK:
   Multi-user experience is not nessessary.
   Validation should be implemented.
   Responsive design is not needed.
-  Backend should be work and persistant without any additional server installation.
+  Backend should be work and persistent without any additional server installation.
 
 You can test how it works here:
   http://188.127.251.190:3002
