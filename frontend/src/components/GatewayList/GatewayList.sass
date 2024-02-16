@@ -1,0 +1,53 @@
+.gateway, .gateway-list
+  background: $dark-grey
+  color: $main-grey
+  cursor: pointer
+  margin: 0 auto
+.gateway-list
+  max-width: 1024px
+  .gateway
+    width: 100%
+    .grid
+      display: grid
+      grid-template-columns: 200px 200px 200px auto
+    .button-wrapper
+      text-align: right
+      button
+        width: 24px
+        height: 24px
+        border: none
+        outline: none
+        margin: auto
+        background-color: $btn
+        -webkit-mask-image: url(~/src/assets/edit.svg)
+        mask-image: url(~/src/assets/edit.svg)
+      button:hover
+        background-color: $main-grey
+    .hidden
+      display: none
+
+.gateway:not(.no-expand):after
+  display: none
+  content: ""
+  position: absolute
+  width: 24px
+  height: 24px
+  left: calc(50% - 12px)
+  bottom: 5px
+  background-color: $main-grey
+  background-size: contain
+  -webkit-mask-image: url(~/src/assets/arrow-down.svg)
+  mask-image: url(~/src/assets/arrow-down.svg)
+  mask-position: center
+  -webkit-mask-position: center
+  transition: transform 0.2s
+
+.gateway:hover, .gateway.expanded
+  background: $dark-grey-hightlight
+  &.gateway:after
+    display: block
+.gateway.expanded.gateway:after
+  -webkit-transform: rotate(180deg)
+  transform: rotate(180deg)
+
+

@@ -1,0 +1,54 @@
+@font-face
+  font-family: "Noah Text"
+  src: url('assets/fonts/Noah\ Text\ Regular.otf')
+@font-face
+  font-family: "Noah Text Bold"
+  src: url('assets/fonts/Noah\ Text\ Bold.otf')
+@font-face
+  font-family: "Noah Head"
+  src: url('assets/fonts/Noah\ Head\ Regular.otf')
+
+.html
+  background-color: $bg
+  color: $main-grey
+
+body
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  min-width: 1024px
+
+.app
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  .content
+    flex-grow: 1
+    background-color: $bg
+    padding: 50px
+
+@supports(height: 100dvh)
+  .app
+    height: 100dvh
+
+button
+  outline: none
+  border: none
+
+.add
+  width: 50px
+  height: 50px
+  background-color: $btn
+  margin: auto
+  -webkit-mask-image: url(~/src/assets/add.svg)
+  mask-image: url(~/src/assets/add.svg)
+  mask-size: contain
+  -webkit-mask-size: contain
+  &.small
+    width: 30px
+    height: 30px
+
+.error
+  color: $red
+  font-family: "Noah Head"

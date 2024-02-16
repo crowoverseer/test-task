@@ -1,0 +1,34 @@
+.device-list, .device
+  background: $dark-grey
+  color: $main-grey
+  cursor: pointer
+  margin: 0 auto
+.device-list
+  max-width: 100%
+  margin: 0 0 24px 0
+  .device
+    width: 100%
+    display: flex
+    flex-direction: column
+    .grid
+      display: grid
+      grid-template-columns: 100px 200px 150px 150px auto !important
+      gap: 50px
+    .online
+      color: $green
+    .offline
+      color: $red
+    .button-wrapper
+      text-align: right
+      button
+        width: 24px
+        height: 24px
+        border: none
+        outline: none
+        margin: auto
+        background-color: $btn
+        -webkit-mask-image: url(~/src/assets/edit.svg)
+        mask-image: url(~/src/assets/edit.svg)
+
+.device:hover
+  background: $dark-grey-hightlight
